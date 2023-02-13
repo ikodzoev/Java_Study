@@ -29,7 +29,7 @@ public class Main {
 
     // 2. Посчитать и сохранить в n номер старшего значащего бита выпавшего числа:
     public static int firstBit(int i) {
-        return Integer.toBinaryString(i).length();
+        return Integer.toBinaryString(i).length() - 1;
     }
 
     // 3. Найти все кратные n числа в диапазоне от i до Short.MAX_VALUE сохранить в массив m1:
