@@ -37,7 +37,17 @@ public class HW_2 {
         System.out.println(replaceDel(glueStr(num1,num2,'+')));
         System.out.println("Задача № 6: ");
         System.out.println(replaceBuild(glueStr(num1,num2,'-')));
-//        timeMon("");
+        System.out.println("Задача № 7: ");
+        long start = System.currentTimeMillis();
+        replaceString(testStr());
+        long stop = System.currentTimeMillis();
+        System.out.println("Затраченное время при использовании String в мс: ");
+        System.out.println(stop - start);
+        long begin = System.currentTimeMillis();
+        replaceBuild(testStr());
+        long end = System.currentTimeMillis();
+        System.out.println("Затраченное время при использовании StringBuilder в мс: ");
+        System.out.println(end - begin);
     }
 
     public static void inFind(String str1, String str2) {
@@ -72,5 +82,19 @@ public class HW_2 {
         StringBuilder get = new StringBuilder(app);
         int i = get.indexOf("=");
         return get.replace(i,i+1,"равно").toString();
+    }
+    public static String replaceString(String app){
+        app.replace("=","равно");
+        return app;
+    }
+    public static String testStr(){
+        int N = 10000;
+        char[] charArray = new char[N];
+        for (int i = 0; i < N; i++) {
+            charArray[i] = '=';
+        }
+        String testString = new String(charArray);
+        return testString;
+//        System.out.println(testString);
     }
 }
