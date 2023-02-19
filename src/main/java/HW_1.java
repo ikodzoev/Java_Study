@@ -8,7 +8,7 @@
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Main {
+public class HW_1 {
     public static void main(String[] args) {
         int min = Short.MIN_VALUE;
         int max = Short.MAX_VALUE;
