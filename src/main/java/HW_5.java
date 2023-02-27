@@ -20,12 +20,12 @@ public class HW_5 {
         System.out.println(colorsFirst);
 
         // Добавить ко всем значениям символ "!".
-        colorsFirst.computeIfPresent(4, (k, v) -> v += '!');
-        colorsFirst.computeIfPresent(8, (k, v) -> v += '!');
-        colorsFirst.computeIfPresent(16, (k, v) -> v += '!');
-        colorsFirst.computeIfPresent(32, (k, v) -> v += '!');
-        colorsFirst.computeIfPresent(64, (k, v) -> v += '!');
-        colorsFirst.computeIfPresent(128, (k, v) -> v += '!');
+        colorsFirst.computeIfPresent(4, (k, v) -> v + '!');
+        colorsFirst.computeIfPresent(8, (k, v) -> v + '!');
+        colorsFirst.computeIfPresent(16, (k, v) -> v + '!');
+        colorsFirst.computeIfPresent(32, (k, v) -> v + '!');
+        colorsFirst.computeIfPresent(64, (k, v) -> v + '!');
+        colorsFirst.computeIfPresent(128, (k, v) -> v + '!');
         System.out.println(colorsFirst);
         colorsFirst.forEach((k, v) -> System.out.println(k + " " + v));
         System.out.println(colorsFirst);
@@ -38,6 +38,7 @@ public class HW_5 {
         colorsFirst.put(8, "оранжевый");
         colorsFirst.put(4, "красный");
         colorsFirst.put(6, "лиловый");
+        System.out.println(colorsSec);
 
         // Объединить значения во втором множестве и первом, если ключи совпадают. Вывести результат в консоль.
         for (Integer item : colorsFirst.keySet()) {
