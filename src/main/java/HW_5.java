@@ -32,12 +32,12 @@ public class HW_5 {
 
         // Создать второе множество с таким же обобщением. Ключи второго множества частично совпадают с ключами первого.
         HashMap<Integer, String> colorsSec = new HashMap<>();
-        colorsFirst.put(2, "белый");
-        colorsFirst.put(1, "синий");
-        colorsFirst.put(10, "жёлтый");
-        colorsFirst.put(8, "оранжевый");
-        colorsFirst.put(4, "красный");
-        colorsFirst.put(6, "лиловый");
+        colorsSec.put(2, "белый");
+        colorsSec.put(1, "синий");
+        colorsSec.put(10, "жёлтый");
+        colorsSec.put(8, "оранжевый");
+        colorsSec.put(4, "красный");
+        colorsSec.put(6, "лиловый");
         System.out.println(colorsSec);
 
         // Объединить значения во втором множестве и первом, если ключи совпадают. Вывести результат в консоль.
